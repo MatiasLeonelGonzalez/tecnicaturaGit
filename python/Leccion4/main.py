@@ -1,4 +1,4 @@
-# video 1
+# CLASE 1 video 1
 
 # lista = ariel, liliana, natalia, osvaldo
 
@@ -113,3 +113,94 @@ print("\n", cocina)
 del cocina  # esto es para eliminar
 print(cocina)
 """
+# CLASE 2
+# #video 1 y 2
+# Tipo set (orden alertorio)(y no se repiten elementos)
+planetas = {"marte", "jupiter", "venus"}  # ejemplo
+print(len(planetas))  # usamos la funcion len= length significa largo
+
+# revisar si un elemento eciste dentro de set
+print("marte" in planetas)  # respetar mayusculas,minusculas y acentos
+
+# agregar un elemento
+planetas.add("tierra")  # add es una funcion
+print(planetas)
+
+# Eliminar elementos, puede generar un error si el elemento no existe
+
+planetas.remove("jupiter")  # esta funcion ante un mal ingreso del elemanto da error
+print(planetas)
+
+planetas.discard("tierra")  # esta funcion no nos presenta ningun error
+
+# limpiar set
+
+planetas.clear()
+print(planetas)
+
+# Eliminar set o conjunto
+
+# del planetas # da error por que borra el set
+
+# video 3
+
+# 'maradona' :10 Un diccionario esta compuesto por dos elementos
+# UNA LLAVE Y UN VALOR
+# dict(key,value)
+diccionario = {
+    "IDE": "Integrated development environment",
+    "POO": "Programacion orientada a objetos",
+    "SABD": "Sisitema de Administracion de base de datos",
+}
+print(len(diccionario))  # len se usa para verificar la cantidad de elementos
+print(diccionario)
+
+# acceder a un diccionario con la llave (key)
+
+print(diccionario["IDE"])
+
+# otra forma de recuperar un elemento
+print(diccionario.get("POO"))
+print(diccionario.get("SABD"))
+
+# modificamos elementos
+diccionario["IDE"] = "Entorno de desarrollo integrado"
+print(diccionario)
+
+# video 4
+# como recorrer los elementos
+for termino in diccionario:
+    print(termino)
+
+for termino in diccionario:  # recorremos mostrando solo las llaves
+    print(termino)
+for termino, valor in diccionario.items():
+    print(termino, valor)
+
+# otras maneras de acceder a un diccionario
+for termino in diccionario.keys():
+    print(termino)  # muestra solo las llaves
+
+for valor in diccionario.values():  # usamos una funcion para acceder al valor
+    print(valor)
+
+# comprobar la ecistencia de algun elemento
+print("IDE" in diccionario)  # devuelve un booleano
+
+# agregar un elemento
+diccionario["PK"] = "Primary key"
+print(diccionario)
+
+# eliminar un elemento
+diccionario.pop("SABD")
+print(diccionario)
+
+# vaciar un diccionario
+diccionario.clear()
+print(diccionario)
+
+# eliminar diccionario
+del diccionario  # el diccionario se borra
+# print(diccionario)  # da error por que se borro en la linea anterior
+
+# video 5 clase 2 laboratorio 2
