@@ -262,3 +262,220 @@ print(tupla)
 print(4 in tupla)  # accuin booleana, su respuesta es de tipo booleana
 # lo que podemos usar dentro de tuplas son: index, count, len
 # en tuplas se puede convertir de tupla a lista y de lista a tupla
+
+
+# CLASE 3
+# video 1
+
+# repaso de set o conjunto
+# para definir un conjunto
+conjunto2 = set()
+conjunto1 = {
+    "bye",
+}
+conjunto2.add(7)
+conjunto2.add("Hola")
+print(conjunto2)
+conjunto1.add("hola")
+print(conjunto1)
+print(3 not in conjunto1)  # preguntamos  si el numero 3 NO esta en el conjunto1
+
+# como hacer la igualdad de dos conjuntos
+print(conjunto1 == conjunto2)  # nos devuelve como respuesta un booleano
+
+# operaciones en conjuntos
+
+conjunto3 = conjunto1 | conjunto2  # la linea une los dos conjuntos
+print(conjunto3)
+
+conjunto3 = (
+    conjunto1 & conjunto2
+)  # que elemento tienen en comun (signo raro que no se cual es xD)
+print(conjunto3)
+
+conjunto3 = (
+    conjunto1 - conjunto2
+)  # asigna el valor que esta en el conjunto1 y no en el conjunto2
+print(conjunto3)
+
+conjunto3 = conjunto2 - conjunto1
+print(conjunto3)
+
+conjunto3 = (
+    conjunto1 ^ conjunto2
+)  # elemento que no comparten o que son diferentes esntre ambos
+print(conjunto3)
+
+# video 3
+
+conjunto3 = conjunto1 | conjunto2
+print(
+    conjunto2.issubset(conjunto3)
+)  # aqui preguntamos si un conjunto es subconjunto dentro de otro
+print(conjunto1.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+print(
+    conjunto3.issuperset(conjunto1)
+)  # preguntamos si los elementos del conjunto1 estan dentro del 3
+print(
+    conjunto3.issubset(conjunto2)
+)  # si es verdadero quiere decir que ele conjunto3 es un superconjunto
+print(conjunto2.issubset(conjunto3))
+
+# como saber si ambos conjuntos son disconexos, esto es si no comparten elementos en comun
+print(conjunto1.isdisjoint(conjunto2))  # no hay cosas en comun
+
+# convertir un conjunto totalmente inmutable
+
+conjunto1 = frozenset  # esto hace que el conjunto sea totalmente inmutable
+# no se puede agregar,modificar ni eliminar del conjunto.
+
+# video 4
+
+# Repaso diccionarios
+
+diccionarioNuevo = {
+    "azul": "blue",
+    "rojo": "red",
+    "verde": "green",
+    "amarillo": "yellow",
+}
+print(diccionarioNuevo)
+
+# como eliminar
+del diccionarioNuevo["azul"]
+print(diccionarioNuevo)
+
+# los diccionarios pueden almavenar diferentes tipos de datos
+diccionario2 = {
+    "ariel": {"edad": 40, "altura": 1.83},
+    "osvaldo": [45, 1.85],
+    "natalia": [35, 167],
+}
+print(diccionario2)
+
+# video 5
+
+seleccionArgentina = {
+    10: {
+        "nombre": "Lionel Messi",
+        "edad": 35,
+        "altura": 1.70,
+        "precio": "300 millones",
+        "Posicion": "Extremo derecho",
+    },
+    11: {
+        "nombre": "Angel di Maria",
+        "edad": 34,
+        "altura": 1.80,
+        "precio": "100 millones",
+        "Posicion": "Extremo izquierdo",
+    },
+    24: {
+        "nombre": "Paulo Dybala",
+        "edad": 28,
+        "altura": 1.77,
+        "precio": "98 millones",
+        "Posicion": "Media punta",
+    },
+    19: {
+        "nombre": "Nicolas Otamendi",
+        "edad": 34,
+        "altura": 1.83,
+        "precio": "70 millones",
+        "Posicion": "Central",
+    },
+    1: {
+        "nombre": "Rodrigo de Paul",
+        "edad": 29,
+        "altura": 1.77,
+        "precio": "80 millones",
+        "Posicion": "Mediocampista",
+    },
+    29: {
+        "nombre": "Gonzalo Ariel Montiel",
+        "edad": 26,
+        "altura": 1.75,
+        "precio": "12 millones",
+        "Posicion": "Lateral derecho",
+    },
+    8: {
+        "nombre": "Enzo Fernández",
+        "edad": 22,
+        "altura": 1.72,
+        "precio": "200 millones",
+        "Posicion": "Mediocampista",
+    },
+    18: {
+        "nombre": "Lucas Beltrán",
+        "edad": 22,
+        "altura": 1.78,
+        "precio": "120 millones",
+        "Posicion": "Delantero",
+    },
+    9: {
+        "nombre": "Julian Alvarez",
+        "edad": 23,
+        "altura": 1.77,
+        "precio": "180 millones",
+        "Posicion": "extremo derecho",
+    },
+}
+
+for llave in seleccionArgentina.items():
+    print(llave, valor)
+
+# como tarea agregar por lo menos 4 jugadores mas al diccionario: seleccionArgentina
+print("tenemos cargados en el diccionario la cantidad de : ", end=" ")
+print(len(seleccionArgentina))
+
+# video 5
+
+# pilas usando lista
+pila = [1, 2, 3]
+
+# agregar elementos a la pila por el final
+
+pila.append(4)
+pila.append(5)
+print(pila)
+
+# sacando elementos desde el final
+
+elementoBorrado = pila.pop()  # quita el ultimo elemento y lo guarda en la variable
+print(f"Sacamos el elemento {elementoBorrado}")
+print(f"La pila ahora quedo asi: {pila}")
+
+# video 6
+
+# colas en listas
+
+# Estructura de datos de tipo fgifi (first input / first output)
+
+cola = ["ariel", "osvaldo", "liliana", "pilar"]
+
+# agregamos elementos al final de la cola
+
+cola.append("natalia")
+cola.append("jose")
+print(cola)
+
+# sacamos elementos de la cola
+
+seRetira = cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+seRetira = cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+seRetira = cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+seRetira = cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
+seRetira = cola.pop(0)
+print(f"Atendido el cliente: {seRetira}")
+print(cola)
