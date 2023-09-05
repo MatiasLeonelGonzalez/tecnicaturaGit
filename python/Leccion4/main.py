@@ -1,5 +1,9 @@
 # CLASE 1 video 1
 
+# Colecciones en Python
+
+# Las listas es lo que se conoce en otros lenguajes como arreglos o vectores
+
 # lista = ariel, liliana, natalia, osvaldo
 
 nombres = ["naty", "osvaldo", "lili", "ariel"]
@@ -203,4 +207,58 @@ print(diccionario)
 del diccionario  # el diccionario se borra
 # print(diccionario)  # da error por que se borro en la linea anterior
 
-# video 5 clase 2 laboratorio 2
+# video 5 explica que a las listas se les puede agregar cualquier tipo de dato.
+
+# video 6
+
+# concatenamos listas
+lista1 = [1, 2, 3, 1]
+lista2 = [4, 5, 6, 1]
+lista3 = lista1 + lista2
+print(lista3)
+
+lista3.extend([7, 8, 9, 1])  # funcion para aggregar varios elementos a una lista
+print(lista3)
+
+print(lista3.index(5))  # funcion para ubicar en que indice esta el valor ingresado
+# print(lista3.index(0)) #esto daria un error por no ser el elemento parte de la lista
+
+# como saber cuantos valores repetidos hay dentro de una lista
+
+print(lista3.count(1))  # cuenta cuantos avlores iguales hay dentro de la lista
+
+# para poner una lista al reves
+
+lista3.reverse()
+print(lista3)
+
+# video 7
+
+# para que una lista se multiplique repitiendo sus elementos
+
+lista3 = lista3 * 2
+print(lista3)
+
+# Metodos de ordenamiento
+
+lista3.sort()  # ordena los elementos ascendentemente
+print(lista3)
+lista3.sort(reverse=True)  # ordena los elementos descendentemente
+print(lista3)
+
+# video 8
+
+# repaso de tuplas
+
+tupla = (
+    3,
+    "hola",
+    6.78,
+    [1, 2, 78],
+    4,
+    "hola",
+)  # puede tener diferentes tipos de datos dentro
+print(tupla)
+print(4 in tupla)  # accuin booleana, su respuesta es de tipo booleana
+# lo que podemos usar dentro de tuplas son: index, count, len
+# en tuplas se puede convertir de tupla a lista y de lista a tupla
