@@ -373,7 +373,7 @@ seleccionArgentina = {
         "precio": "100 millones",
         "Posicion": "Extremo izquierdo",
     },
-    24: {
+    21: {
         "nombre": "Paulo Dybala",
         "edad": 28,
         "altura": 1.77,
@@ -479,3 +479,8 @@ print(cola)
 seRetira = cola.pop(0)
 print(f"Atendido el cliente: {seRetira}")
 print(cola)
+
+# CLASE 4 video 5
+# Seguimos mostrando como reccorrer un diccionario con  el ciclo for
+for i in seleccionArgentina:
+    print(f"{i} -> {seleccionArgentina[i]}")
