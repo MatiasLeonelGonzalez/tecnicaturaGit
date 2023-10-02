@@ -1,6 +1,6 @@
 //Ejercicio 2: Leer un numero e indicar si es positivo o negativo.El proceso se repetira hasta que se introduzca un cero.
 // con JOptionPane
-package CicloWhile;
+package java.Leccion2;
 
 import javax.swing.JOptionPane;
 
