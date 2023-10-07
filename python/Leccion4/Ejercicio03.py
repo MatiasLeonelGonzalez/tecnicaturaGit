@@ -1,3 +1,4 @@
+# Clase 4 video 8
 # Ejercicio 3: Insertar elementos y ordenarlos
 # Pedir numeros y meterlos en una lista, cuando el usuario introduzca un numero 0, nuestro programa dejaria de insertar.
 # Por ultimo, mostrar los numeros ordenados de menor a mayor.
