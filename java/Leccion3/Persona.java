@@ -1,6 +1,6 @@
-package java;
+package java.Leccion3;
 
-public class LeccionClasesObjetos {
+public class Persona {
     // clase 4
     // Atributos de la clase (caracteristicas)
     String nombre;
@@ -11,4 +11,4 @@ public class LeccionClasesObjetos {
         System.out.println("Nombre: " + nombre);
         System.out.println("Apellido: " + apellido);
     }
-} 
+}

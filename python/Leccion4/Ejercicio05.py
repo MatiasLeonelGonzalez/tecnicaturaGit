@@ -10,3 +10,5 @@ factorial = 1  # la variable para calcular el factorial
 for i in range(1, numero + 1):
     factorial *= i
 print(f"\nEl factorial del numero {numero} positivo ingresado es: {factorial}")
+
+# clase 5 video 3
